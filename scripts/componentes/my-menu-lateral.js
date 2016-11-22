@@ -1,13 +1,15 @@
 angular.module('appExpedientes')
   .component('menuLateral', {    
-    transclude: true,
+    bindings: {
+       opcionesMenu:'<'
+    },
     templateUrl:'templates/componentes/barra-lateral.html'
   })
   .component('grupoMenuLateral', {
     bindings: {
-       titulo:'<'
+       titulo:'<',
+       elementos:'<'
     },
-    transclude: true,
     templateUrl:'templates/componentes/grupo-menu-lateral.html'
   })
   .component('opcionMenuLateral', {
