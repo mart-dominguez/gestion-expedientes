@@ -24,11 +24,20 @@
 
   <body ng-controller="expedientesController">
     <my-nav nombre-proyecto="Gestion Expedientes" lista-opciones="opcionesNav"></my-nav>
-
+    
+    
 
     <div class="container-fluid">
       <div class="row">
-        
+        <menu-lateral>
+      <grupo-menu-lateral ng-repeat="grupo in opcionesMenu" titulo="grupo.tituloGrupo">
+        <opcion-menu-lateral ng-repeat="opcion in grupo.opciones"
+        titulo="opcion.titulo"
+        enlace="opcion.enlace"
+        activo="opcion.activo">
+        </opcion-menu-lateral>  
+      </grupo-menu-lateral>
+    </menu-lateral>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
 
@@ -94,6 +103,7 @@
     <script src="scripts/controller/app-controller.js"></script>
     <script src="scripts/servicios/expedientesService.js"></script>
     <script src="scripts/componentes/my-nav.js"></script>
+    <script src="scripts/componentes/my-menu-lateral.js"></script>
 
   </body>
 </html>
