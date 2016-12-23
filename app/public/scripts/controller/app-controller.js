@@ -8,16 +8,16 @@ angular.module('appExpedientes').controller('expedientesController', ['$scope',f
  		$scope.opcionesMenu = [
  			{tituloGrupo: "menu1 ", 
  				opciones:[
- 			    	{enlace:"url1",titulo:"SubMenu1-1",activo:true},
- 			    	{enlace:"url2",titulo:"SubMenu1-2",activo:false},
- 			    	{enlace:"url3",titulo:"SubMenu1-3",activo:false}
+ 			    	{enlace:"url1",titulo:"Crear expedientes",activo:true},
+ 			    	{enlace:"url2",titulo:"Consultar expediente",activo:false},
+ 			    	{enlace:"url3",titulo:"Registrar pase",activo:false}
                 ]
             },
  			{tituloGrupo: "menu 2 ", 
  				opciones:[
- 			    	{enlace:"url1",titulo:"SubMenu2-1",activo:true},
- 			    	{enlace:"url2",titulo:"SubMenu2-2",activo:false},
- 			    	{enlace:"url3",titulo:"SubMenu2-3",activo:false}
+ 			    	{enlace:"url1",titulo:"Registrar Areas",activo:true},
+ 			    	{enlace:"url2",titulo:"Consultar Areas",activo:false},
+ 			    	{enlace:"url3",titulo:"Reportes por Area",activo:false}
                 ]
             }
         ]            
